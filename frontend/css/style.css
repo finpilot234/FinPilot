@@ -1,74 +1,87 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0F172A;
+    background:#0f172a;
     color:white;
 }
 
-/* Navigation */
+/* ================= NAVBAR ================= */
 
 .navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:25px 70px;
+    padding:25px 80px;
 }
 
 .logo{
-    font-size:30px;
-    font-weight:bold;
+    font-size:28px;
+    font-weight:700;
 }
 
 .nav-links{
-    display:flex;
     list-style:none;
-    gap:30px;
+    display:flex;
     align-items:center;
+    gap:30px;
 }
 
 .nav-links a{
     color:white;
     text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#22c55e;
 }
 
 .nav-btn{
-    background:#22C55E;
+    background:#22c55e;
     color:white;
     border:none;
-    padding:12px 22px;
+    padding:12px 24px;
     border-radius:8px;
     cursor:pointer;
+    font-weight:600;
 }
 
-/* Hero */
+.nav-btn:hover{
+    background:#16a34a;
+}
+
+/* ================= HERO ================= */
 
 .hero{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
-
-    padding:100px 70px;
+    padding:80px;
+    gap:60px;
 }
 
 .hero-text{
-    max-width:600px;
+    flex:1;
 }
 
 .hero-text h1{
-    font-size:64px;
-    margin-bottom:25px;
+    font-size:60px;
+    margin-bottom:20px;
+    line-height:1.1;
 }
 
 .hero-text p{
     font-size:22px;
-    color:#CBD5E1;
-    margin-bottom:40px;
+    color:#cbd5e1;
+    margin-bottom:35px;
 }
 
 .buttons{
@@ -76,40 +89,40 @@ body{
     gap:20px;
 }
 
-.primary{
-    background:#22C55E;
-    color:white;
-    border:none;
-    padding:15px 35px;
+.primary,
+.secondary{
+    padding:15px 30px;
     border-radius:10px;
     font-size:18px;
     cursor:pointer;
+    border:none;
+}
+
+.primary{
+    background:#22c55e;
+    color:white;
 }
 
 .secondary{
     background:transparent;
     color:white;
     border:2px solid white;
-    padding:15px 35px;
-    border-radius:10px;
-    font-size:18px;
-    cursor:pointer;
 }
 
-/* Dashboard Card */
+/* ================= DASHBOARD ================= */
 
 .dashboard{
-    width:350px;
+    flex:1;
 }
 
 .card{
-    background:#1E293B;
-    padding:30px;
+    background:#1e293b;
+    padding:35px;
     border-radius:20px;
-    margin-top:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
 }
 
 .card p{
-    margin:18px 0;
-    font-size:18px;
+    font-size:20px;
+    margin:20px 0;
 }
